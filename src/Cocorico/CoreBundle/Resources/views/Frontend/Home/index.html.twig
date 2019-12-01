@@ -36,11 +36,18 @@
         {% endblock %}
 
         {% block main %}
-            <!-- infoarea -->
+            {% include 'CocoricoCoreBundle:Frontend/Home:_high_rank.html.twig'  with {
+            'listings': listings
+            } only %}
+            {% include 'CocoricoCoreBundle:Frontend/Home:_hight_thematique.html.twig'  with {
+            'listings': listings
+            } only %}
+            {# {{ render(controller('CocoricoCoreBundle:Frontend/Home:rssFeeds')) }} #}
+      <!-- infoarea -->
             <div class="infoarea container">
                 <div class="row">
                     <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
+                    <div class="col-xs-12 col-sm-6 col-md-3 info-box">
                         <img src="{{ asset('images/icon1.png') }}" alt="icon description" class="pull-left icon">
 
                         <div class="textbox">
@@ -54,7 +61,7 @@
                         </div>
                     </div>
                     <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
+                    <div class="col-xs-12 col-sm-6 col-md-3 info-box">
                         <img src="{{ asset('images/icon2.png') }}" alt="icon description" class="pull-left icon">
 
                         <div class="textbox">
@@ -69,7 +76,7 @@
                     </div>
                     <div class="clearfix visible-sm"></div>
                     <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
+                    <div class="col-xs-12 col-sm-6 col-md-3 info-box">
                         <img src="{{ asset('images/icon3.png') }}" alt="icon description" class="pull-left icon">
 
                         <div class="textbox">
@@ -82,15 +89,22 @@
                             </p>
                         </div>
                     </div>
+                    <!-- info-box -->
+                    <div class="col-xs-12 col-sm-6 col-md-3 info-box">
+                        <img src="{{ asset('images/icon4.png') }}" alt="icon description" class="pull-left icon">
+
+                        <div class="textbox">
+                            <h2>
+                                <a href="#">{{ 'home.subinfo.title4'|trans|raw }}</a>
+                            </h2>
+
+                            <p>
+                                {{ 'home.subinfo.desc4'|trans|raw }}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            {% include 'CocoricoCoreBundle:Frontend/Home:_high_rank.html.twig'  with {
-            'listings': listings
-            } only %}
-
-            {{ render(controller('CocoricoCoreBundle:Frontend/Home:rssFeeds')) }}
-
         {% endblock %}
 
         {% block modal %}

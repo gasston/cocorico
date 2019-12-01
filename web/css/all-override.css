@@ -172,9 +172,9 @@
 .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
     float: right;
     background: none repeat scroll 0 0 #ffffff;
-    border: 2px solid #c6ccd2;
+    border: 2px solid #1ab5c1;
     border-radius: 100%;
-    color: #c6ccd2;
+    color: #1ab5c1;
     font-size: 20px;
     height: 25px;
     line-height: 20px;
@@ -1075,7 +1075,7 @@ li.time-fields {
     height: 24px;
     line-height: 24px;
     margin: 0;
-    color: #c6ccd2;
+    color: #1ab5c1;
     float: none;
 }
 
@@ -1503,7 +1503,7 @@ ul.dropdown-menu ul.menu-sub-tabs li {
     padding-bottom: 0px;
     float: left;
     margin-top: 1px;
-    background-color: #c6ccd2;
+    background-color: #1ab5c1;
 }
 
 .navbar-default .navbar-nav > li > ul.dropdown-menu.display-sub-tabs:after {
@@ -2238,7 +2238,7 @@ ul.collection {
 
 .clear_input, .clear_input:hover {
     text-decoration: none;
-    color: #c6ccd2;
+    color: #1ab5c1;
     transition: background 0.4s;
     font-size: 20px;
 }
@@ -3136,4 +3136,11 @@ h1[data-id="result-title"] {
 
 .list-comma span:last-child:after {
     content: ".";
+}
+
+h3.high-rank-subtitle{
+    font-weight: 200;
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 25px;
 }

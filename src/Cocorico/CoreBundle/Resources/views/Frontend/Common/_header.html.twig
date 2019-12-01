@@ -3,7 +3,7 @@
 <!-- header of the page -->
 <header id="header">
     <!-- topbar -->
-    <div class="topbar">
+    <!--<div class="topbar">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="container">
         <div class="row">
@@ -59,7 +59,12 @@
                                     <span id="fav-count"></span>
                                 </a>
                             </li>
-
+                            <li>
+                                <a href="{{ path('cocorico_listing_favourite') }}"
+                                   tabindex="5">{{ 'nav.favorites.visite'|trans }}
+                                    <span id="fav-count"></span>
+                                </a>
+                            </li>
                             {# User info #}
                             {%- if app.user is not null and is_granted("IS_AUTHENTICATED_FULLY") -%}
                                 <li id="dashboard-dropdown" class="dropdown">
