@@ -78,8 +78,7 @@ class RegistrationFormType extends AbstractType
                 array(
                     'label' => 'form.first_name',
                 )
-            )
-            ->add(
+            )->add(
                 'phonePrefix',
                 TextType::class,
                 array(
